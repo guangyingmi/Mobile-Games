@@ -26,8 +26,9 @@ module.exports = async function(
       data = result;
     }
   } catch (err) {
-    console.log("失败：" + err);
+    // console.log("失败：" + err);
     message = error_msg + ":" + err;
+    require("./writeLog")("../log/error.log",message,res);
     code = -1;
     data = {};
   } finally {
