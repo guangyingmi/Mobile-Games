@@ -16,7 +16,7 @@ server.use("/api/asset",require("./routes/assetRouter"));
 server.use("/api/article",require("./routes/articleRouter"));
 server.use("/api/licence",require("./routes/licenceRouter"));
 server.use("/api/seal",require("./routes/sealRouter"));
-
+server.use("/api/user",require("./routes/userRouter"))
 
 /**
  * 
